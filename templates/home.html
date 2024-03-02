@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply to Bagmati State University</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="{%static 'css/style_home.css'%}">
+
+</head>
+
+<body>
+    <h1>Apply to Bagmati State University</h1>
+    <form action="submit_application.php" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="semester">Select Level:</label><br>
+        <select id="semester" name="semester">
+            <option value="Spring 2024">Bachelor</option>
+            <option value="Summer 2024">Master</option>
+            <option value="Fall 2024">PHD</option>
+        </select><br><br>
+
+        <label for="program">Select Program:</label><br>
+        <select id="program" name="program">
+            <!-- Include options for different programs here -->
+            <option value="Computer Science">Computer Science</option>
+            <option value="Business Administration">Business Administration</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Education">Education</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit Application">
+    </form>
+    <br>
+    <a href="{% url 'logout' %}" style="color: black;text-decoration: none; padding-left: 720px;">Logout</a>
+</body>
+
+</html>

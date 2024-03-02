@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="{%static 'css/news.css'%}">
+</head>
+<body>
+    <header>
+        <h1>News and Updates</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home_page' %}">Home</a></li>
+                <li><a href="{% url 'about_page' %}">About Us</a></li>
+                <li><a href="{% url 'apply_login' %}">Apply</a></li>
+                <!-- <li><a href="#">Entertainment</a></li> -->
+                <!-- <li><a href="#">Sports</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="news">
+            <article>
+                <h2>Latest Updates</h2>
+                <p>All the notice and update will be appear here if uploaded from Bagmati State University.</p>
+                <a href="#">Read more</a>
+            </article>
+            <!-- More articles can be added here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 News Website</p>
+    </footer>
+</body>
+</html>

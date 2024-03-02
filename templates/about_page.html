@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    <meta charset="UTF">
+    <meta name="viewport" content="width=devic-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/style_about_page.css'%}">
+</head>
+
+<body>
+
+    <div class="About-Us">
+        <div class="container">
+            <div class="row">
+                <div class="flex">
+                    <h2>About-Us</h2>
+                    <p>Bagmati State University (BSU) is a leading institution of higher education located in the heart
+                        of Bagmati State, Nepal. Established with the vision of fostering academic excellence and
+                        nurturing future leaders, BSU is committed to providing quality education, conducting
+                        groundbreaking research, and serving the community.
+
+                        Our university offers a diverse range of undergraduate, graduate, and doctoral programs across
+                        various disciplines, including arts, sciences, engineering, business, education, and more. With
+                        a dedicated faculty comprising experts and scholars from around the world, we strive to create a
+                        dynamic learning environment that encourages intellectual curiosity, critical thinking, and
+                        innovation.
+
+                        At BSU, we believe in the transformative power of education to shape lives and build a better
+                        society. Our students are not only equipped with the knowledge and skills necessary for their
+                        chosen careers but also instilled with values of integrity, compassion, and social
+                        responsibility.
+
+                        As a research-driven institution, BSU is at the forefront of cutting-edge discoveries and
+                        innovation.</p>
+                    <div class="social-links">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="{% url 'home_page' %}" class="btn">Home</a>
+                </div>
+                <div class="flex">
+                    <img src="{% static 'images/about_img.jpg' %}">
+                </div>
+            </div>
+</body>
